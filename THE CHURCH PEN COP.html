@@ -17,6 +17,53 @@
   <link rel="stylesheet" href="assets/mobirise-slider/style.css">
   <link rel="stylesheet" href="assets/mobirise-gallery/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 30s slidy infinite; 
+}
+.captioned-gallery figcaption{
+      padding-bottom:40px;
+
+
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: auto; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem; 
+}
+
+
+  </style>
   
   
 </head>
@@ -43,8 +90,48 @@
         </div>
     </div>
 </section>
+<section>
+    
 
-<section class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background mbr-after-navbar" id="header1-73" style="background-image: url(https://scontent.ftlv8-1.fna.fbcdn.net/v/t1.0-9/12670359_1081685448560994_1899432824720964265_n.jpg?_nc_cat=102&_nc_ht=scontent.ftlv8-1.fna&oh=e80bce9f9b12e835c381ed64dadea793&oe=5CE1CEDB);">
+
+
+
+    <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+<div id="captioned-gallery">
+    <figure class="slider">
+        <figure>
+            <img src="https://thecophq.org/wp-content/uploads/2018/05/chairman-elect-edited.jpg" alt>
+            <figcaption>Hobbiton, New Zealand</figcaption>
+        </figure>
+        <figure>
+            <img src="https://scontent.ftlv8-1.fna.fbcdn.net/v/t1.0-9/14102755_1186857034710501_7257769473772473375_n.jpg?_nc_cat=106&_nc_ht=scontent.ftlv8-1.fna&oh=104f6c431fc70e9dbe26bd65d4bd13bf&oe=5CDB11E4" alt>
+            <figcaption>Wanaka, New Zealand</figcaption>
+        </figure>
+        <figure>
+            <img src="https://scontent.ftlv8-1.fna.fbcdn.net/v/t1.0-9/14079483_1186857681377103_2808970666468915526_n.jpg?_nc_cat=110&_nc_ht=scontent.ftlv8-1.fna&oh=952253e272474c1e7c374804f9d16559&oe=5D240F49" alt>
+            <figcaption>Utah, United States</figcaption>
+        </figure>
+        <figure>
+            <img src="https://scontent.ftlv8-1.fna.fbcdn.net/v/t1.0-9/14908293_1246928492036688_8196277494898871347_n.jpg?_nc_cat=100&_nc_ht=scontent.ftlv8-1.fna&oh=297095178c405ed4fff58638295d83eb&oe=5CE0D9A0" alt>
+            <figcaption>Bryce Canyon, Utah, United States</figcaption>
+        </figure>
+        <figure>
+            <img src="https://scontent.ftlv8-1.fna.fbcdn.net/v/t1.0-9/14590356_1246929455369925_6598888825531486244_n.jpg?_nc_cat=110&_nc_ht=scontent.ftlv8-1.fna&oh=4218705a898898528fb8babaafeeb7cd&oe=5D1E6DCA" alt>
+            <figcaption>Hobbiton, New Zealand</figcaption>
+        </figure>
+        <figure>
+            <img src="https://scontent.ftlv8-1.fna.fbcdn.net/v/t1.0-9/14364775_1206897892706415_6842649744811051564_n.jpg?_nc_cat=101&_nc_ht=scontent.ftlv8-1.fna&oh=134175ae44f049788763135cfd961a6d&oe=5CE80BD2" alt>
+            <figcaption>Hobbiton, New Zealand</figcaption>
+        </figure>
+        <figure>
+            <img src="https://scontent.ftlv8-1.fna.fbcdn.net/v/t1.0-9/14051553_1186857571377114_5393609138251954963_n.jpg?_nc_cat=111&_nc_ht=scontent.ftlv8-1.fna&oh=8128a0ffd602acadcb395cb5cf1580a8&oe=5CE704BA" alt>
+            <figcaption>Hobbiton, New Zealand</figcaption>
+        </figure>
+    </figure>
+</div>
+</section>
+
+<<!-- section class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--full-height mbr-section--bg-adapted mbr-parallax-background mbr-after-navbar" id="header1-73" style="background-image: url(https://scontent.ftlv8-1.fna.fbcdn.net/v/t1.0-9/12670359_1081685448560994_1899432824720964265_n.jpg?_nc_cat=102&_nc_ht=scontent.ftlv8-1.fna&oh=e80bce9f9b12e835c381ed64dadea793&oe=5CE1CEDB);">
     <div class="mbr-box__magnet mbr-box__magnet--sm-padding mbr-box__magnet--center-left">
         <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(76, 175, 80, 0.1);"></div>
         <div class="mbr-box__container mbr-section__container container">
@@ -52,12 +139,16 @@
                 <div class="row"><div class=" col-sm-6">
                     <div class="mbr-hero animated fadeInUp">
                         <h1 class="mbr-hero__text">THE CHURCH OF PENTECOST-ISRAEL</h1>
-                        <p class="mbr-hero__subtext">BRINKING THE WORLD TO THE SALVATION KNOWLEDGE OF CHRIST AS AN AGENT OF TRANSFORMATION.&nbsp; . <br></p>
+                        <p class="mbr-hero__subtext">BRINGING THE WORLD TO THE SAVING KNOWLEDGE OF OUR LORD AND SAVIOUR JESUS CHRIST AS AN AGENT OF TRANSFORMATION.&nbsp; . <br></p>
                     </div>
-                    <div class="mbr-buttons btn-inverse mbr-buttons--left"><a class="mbr-buttons__btn btn btn-lg animated fadeInUp delay btn-warning" href="https://www.facebook.com/The-Church-Of-Pentecost-Israel-1032815113448028/?epa=SEARCH_BOX">SERMONS/LIVING-WORD</a> <a class="mbr-buttons__btn btn btn-lg btn-default animated fadeInUp delay" href="file:///home/emmanuel/html-demo/images/Church-Website-Template/index.html">EVENTS FOR THE MONTH</a></div>
+                    <div class="mbr-buttons btn-inverse mbr-buttons--left"><a class="mbr-buttons__btn btn btn-lg animated fadeInUp delay btn-warning" href="https://www.facebook.com/The-Church-Of-Pentecost-Israel-1032815113448028/?epa=SEARCH_BOX">POSSESSING THE NATIONS!<br> I AM AN AGENT OF TRANSFORMATION</a>
+                        <div class="mbr-buttons btn-inverse mbr-buttons--left"><a class="mbr-buttons__btn btn btn-lg animated fadeInUp delay btn-warning" href="https://www.facebook.com/The-Church-Of-Pentecost-Israel-1032815113448028/?epa=SEARCH_BOX">POSSÉDER AUX NATIONS! <br> JE SUIS AGENT DE TRANSFORMATION </a>
+                            <div class="mbr-buttons btn-inverse mbr-buttons--left"><a class="mbr-buttons__btn btn btn-lg animated fadeInUp delay btn-warning" href="https://www.facebook.com/The-Church-Of-Pentecost-Israel-1032815113448028/?epa=SEARCH_BOX">בעל האומה!
+אני סוכן של טרנספורמציה </a>
+                    <!--  <div class="mbr-buttons__btn btn btn-lg btn-default animated fadeInUp delay" href="file:///home/emmanuel/html-demo/images/Church-Website-Template/<!-- index.html"></a></div -->>
                 </div></div>
             </div></div>
-        </div>
+        </div> --> -->
         <div class="mbr-arrow mbr-arrow--floating text-center">
             <div class="mbr-section__container container">
                 <a class="mbr-arrow__link" href="#features1-75"><i class="glyphicon glyphicon-menu-down"></i></a>
@@ -520,49 +611,53 @@ Come join us — we'd love to have you for a Friday/Saturday for-life transformi
         <div class="row">
             <div>
                 <div class="thumbnail">
-                    <div class="image"><img class="undefined" src="assets/images/workflow-350x350-59.png"></div>
+                    <div class="image"><img class="undefined" src="https://unityinthetruth.files.wordpress.com/2012/02/bible-sword-image.jpg"></div>
                     <div class="caption">
                         <div>
-                            <h3>PARALLAX SCROLLING</h3>
+                            <h3>WEEKLY INSPIRATION</h3>
                             <p>Etiam lacinia volutpat magna, sed lobortis risus egestas in. Nunc fringilla urna ac libero venenatis molestie. Curabitur molestie mi quis mauris convallis aliquet. Cras pretium sapien mi, sed sagittis est ultrices at.</p>
                         </div>
-                        <p class="group"><a href="https://mobirise.com/bootstrap-template/" class="btn btn-default">LEARN MORE</a></p>
+                        <p class="group"><a href="https://mobirise.com/bootstrap-template/" class="btn btn-default">DAILY MANNA</a></p>
                     </div>
                 </div>
             </div>
             <div>
                 <div class="thumbnail">
-                    <div class="image"><img class="undefined" src="assets/images/chrome-remote-desktop-350x350-23.png"></div>
+                    <div class="image"><img class="undefined" src="https://static.wixstatic.com/media/1e22ba_df5a34813c824e1196c1326395607b6c~mv2.jpg/v1/fill/w_304,h_160,al_c,q_80,usm_0.66_1.00_0.01/1e22ba_df5a34813c824e1196c1326395607b6c~mv2.webp"></div>
                     <div class="caption">
                         <div>
-                            <h3>FULL SCREEN INTRO</h3>
+                            <h3>PRAYER REQUIST</h3>
                             <p>Etiam lacinia volutpat magna, sed lobortis risus egestas in. Nunc fringilla urna ac libero venenatis molestie. Curabitur molestie mi quis mauris convallis aliquet. Cras pretium sapien mi, sed sagittis est ultrices at.</p>
                         </div>
-                        <p class="group"><a href="https://mobirise.com/bootstrap-template/" class="btn btn-default">LEARN MORE</a></p>
+                        <p class="group"><a href="https://mobirise.com/bootstrap-template/" class="btn btn-default">CLICK FOR REQUIST</a></p>
                     </div>
                 </div>
             </div>
             <div>
                 <div class="thumbnail">
-                    <div class="image"><img class="undefined" src="assets/images/com-350x350-41.png"></div>
+                    <div class="image"><img class="undefined" src="https://i.ytimg.com/vi/_08fOhC8zl0/maxresdefault.jpg"></div>
                     <div class="caption">
                         <div>
-                            <h3>WEB FONTS</h3>
+                            <h3>GLOBAL MINISTERS CONFERENCE</h3>
                             <p>Etiam lacinia volutpat magna, sed lobortis risus egestas in. Nunc fringilla urna ac libero venenatis molestie. Curabitur molestie mi quis mauris convallis aliquet. Cras pretium sapien mi, sed sagittis est ultrices at.</p>
                         </div>
-                        <p class="group"><a href="https://mobirise.com/bootstrap-template/" class="btn btn-default">LEARN MORE</a></p>
+                        <p class="group"><a href="https://www.youtube.com/watch?v=_08fOhC8zl0" class="btn btn-defaul">GMC</a></p>
                     </div>
                 </div>
             </div>
             <div>
+
                 <div class="thumbnail">
-                    <div class="image"><img class="undefined" src="assets/images/calculator-350x350-78.png"></div>
+                    <div class="image"><img class="undefined" src="https://static.wixstatic.com/media/1e22ba_69b5729bf18645f49342bc301e0e56b4.jpg/v1/fill/w_304,h_187,al_c,q_80,usm_0.66_1.00_0.01/1e22ba_69b5729bf18645f49342bc301e0e56b4.webp">
+                    <h3>DONATION</h3>
+
+                    </div>
                     <div class="caption">
                         <div>
-                            <h3>PRICE TABLES</h3>
-                            <p>Etiam lacinia volutpat magna, sed lobortis risus egestas in. Nunc fringilla urna ac libero venenatis molestie. Curabitur molestie mi quis mauris convallis aliquet. Cras pretium sapien mi, sed sagittis est ultrices at.</p>
+<!--                             <h3>PRICE TABLES</h3>
+ -->                            <p>Etiam lacinia volutpat magna, sed lobortis risus egestas in. Nunc fringilla urna ac libero venenatis molestie. Curabitur molestie mi quis mauris convallis aliquet. Cras pretium sapien mi, sed sagittis est ultrices at.</p>
                         </div>
-                        <p class="group"><a href="https://mobirise.com/bootstrap-template/" class="btn btn-default">LEARN MORE</a></p>
+                        <p class="group"><a href="https://mobirise.com/bootstrap-template/" class="btn btn-default">DONATION</a></p>
                     </div>
                 </div>
             </div>

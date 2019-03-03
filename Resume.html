@@ -1,0 +1,502 @@
+<html>
+<head>
+	<title>Resume</title>
+<!-- 	<meta property="og:image" content="https://codepen.io/jramos5/pen/WRVqYZ/image/large.png" itemprop="thumbnailUrl">
+ -->  <meta property="og:title" content="Resume">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ -->  <link href='//fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
+<link href='//fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<style type="text/css">
+	  .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    background-color: #78cdc8;
+}
+.pic{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  border-radius:100px;
+  border-width:4px;  
+  border-style:solid;
+  border-color:#0097a7;
+  margin-top:20px;
+}
+.name,.position{
+  text-align:center;
+}
+.position{
+  padding-bottom:5px;
+}
+.title1,.contact-me,.My-Skills{
+  margin-left:10%;
+}
+.personal-info{
+  background-color:#f4f5f7;
+}
+p.about-me{
+  margin:5%;
+}
+h5,.date{
+  padding-top:8px;
+  margin-left:15px;
+  font-family: 'Fugaz One';font-size: 22px;
+}
+li{
+  list-style:none;
+}
+.progress{
+  margin-right: 30px;
+}
+h4{
+  padding-top:25px;
+  left:0px;
+}
+.title2{
+  text-align:center;
+  font-family: 'Carter One';font-size: 22px;
+  
+}
+
+.experience{
+  margin:20px;
+  border: 2px solid #263238;
+  background-color:white;
+}
+.experience:hover{
+  -webkit-box-shadow: -1px 13px 35px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 13px 35px 1px rgba(0,0,0,0.75);
+box-shadow: -1px 13px 35px 1px rgba(0,0,0,0.75);
+  
+  
+}
+.adjust-p{
+  margin-left: 45px;
+  margin-right: 20px;
+}
+.tag{
+  position: absolute;
+  height: 50px;
+  width: 0px;
+  border-left: 17px solid #263238;
+  border-right: 17px solid #263238;
+  border-bottom: 18px solid transparent;
+  right: 80px;
+}
+.size{
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+.level{
+  padding-top:15px;
+  text-align:center;
+}
+.row2{
+  opacity:0;
+}
+
+.past-experience{
+  width:100%;
+}
+.row{
+  background-color:#dcd9d9;
+}
+.social{
+  display : inline-block;
+  width : 69px;
+  height : 69px;
+  padding : 8px;
+  border-radius:100%;
+  background-color : white;
+  margin:10px;
+  transition: all 0.5s ease-in-out;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+.social svg{
+  transition: transform 0.5s ease-out;
+  
+}
+.social:hover{
+  border-radius:10%;
+  transform: rotate(405deg);
+}
+.social:hover svg{
+  transform: rotate(315deg);
+}
+
+.facebook{
+		fill: #3b5998;
+    border-color:#3b5998;
+  border-width:2px;
+  border-style: solid;
+}
+.facebook:hover{
+    fill:white;
+		background: #3b5998;
+}
+.codepen{
+  border-color:#455A64;
+  border-width:2px;
+  border-style: solid;
+}
+.codepen:hover{
+  background :#455A64;
+}
+
+.codepen:hover line,.codepen:hover polyline,.codepen:hover polygon{
+  stroke:white;
+}
+.linkedin{
+  fill:#0077b5;
+  border-color:#0077b5;
+  border-width:2px;
+  border-style: solid;
+}
+.linkedin:hover{
+  fill:white;
+		background: #0077b5;
+}
+.whatsapp{
+  fill:#00ca74;
+  border-color:#00ca74;
+  border-width:2px;
+  border-style: solid;
+}
+.whatsapp:hover{
+  fill:white;
+  background: #00ca74;
+}
+.progress-bar{
+  background-color:#263238;
+}
+@media only screen and (max-width: 500px) {
+    .iconsocial {
+        width:24%;
+        
+    }
+}
+/* entire container, keeps perspective */
+.flip-container {
+	
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width:100%;
+	height: 161px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  background-color:#444444;
+}
+body{
+  background-color:#444444;
+}
+.position{
+  font-family: 'Fredoka One';font-size: 17px;
+}
+
+.back-text{
+  padding:20px;
+  color:white;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6 col-md-4">
+			<!--.col-xs-12 .col-md-8-->
+			<div class="flex-container">
+				<div class="flex-box">
+					<div class="profile">
+						<div>
+							<img class="pic" src="https://media.licdn.com/dms/image/C5603AQGzGTjk0PS5Kw/profile-displayphoto-shrink_200_200/0?e=1541635200&v=beta&t=LOjolxiKvVg8wrWQkbSMsRDoNP9_vY-pKHLeQYiS_t4" alt=""/>
+						</div>
+						<div class=name>
+							Emmanuel Asiama
+						</div>
+						<div class="position">
+							 Freelancer with FrontEnd skills
+						</div>
+						<div class="personal-info">
+							<h5 class="title1"><i class="material-icons dp48">perm_identity</i> About me</h5>
+							<p class="about-me">
+								 A lot passion for web design with bright colors and all kinds of designs using HTML5, CSS3, jQuery and Javascript. Always doing my code and my style sheets as light as possible and at the same time making them responsive. Also like to program embbed systems as hobby knowledge in HTML ,CSS,BOOSTRAP,JAVASCRIPT, LINUS AND GITHIUB.
+							</p>
+							<h5 class="contact-me"><i class="material-icons dp48">contact_phone</i> Contact Me</h5>
+							<ul>
+								<li>Phone: (0972)0508509686</li>
+								<li>EMMANUEL ASIAMA-TEL AVIV-ISRAEL </li>
+								<li>e-mail:emmanuelasiama5@gmail.com</li>
+							</ul>
+							<h5 class="My-Skills"><i class="material-icons dp48">star</i> My Skills</h5>
+							<p class="about-me">
+								 CSS3
+							</p>
+							<ul>
+								<li>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+										<span class="sr-only">40% Complete (success)</span>
+									</div>
+								</div>
+								</li>
+							</ul>
+							<p class="about-me">
+								 Javascript
+							</p>
+							<ul>
+								<li>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+										<span class="sr-only">0% Complete (success)</span>
+									</div>
+								</div>
+								</li>
+							</ul>
+							<p class="about-me">
+								 Jquery
+							</p>
+							<ul>
+								<li>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+										<span class="sr-only">40% Complete (success)</span>
+									</div>
+								</div>
+								</li>
+							</ul>
+							<p class="about-me">
+								 Less.js
+							</p>
+							<ul>
+								<li>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+										<span class="sr-only">30% Complete (success)</span>
+									</div>
+								</div>
+								</li>
+							</ul>
+							<p class="about-me">
+								 Stylus
+							</p>
+							<ul>
+								<li>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+										<span class="sr-only">40% Complete (success)</span>
+									</div>
+								</div>
+								</li>
+							</ul>
+							<p class="about-me">
+								 Bootstrap Framework
+							</p>
+							<ul>
+								<li>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+										<span class="sr-only">40% Complete (success)</span>
+									</div>
+								</div>
+								</li>
+							</ul>
+							<p class="about-me">
+								 Materializecss Framework
+							</p>
+							<ul>
+								<li>
+								<div class="progress">
+									<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+										<span class="sr-only">40% Complete (success)</span>
+									</div>
+								</div>
+								</li>
+							</ul>
+							<br/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-8 column2">
+			<div class="past-experience">
+				<h4 class="title2">EXPERIENCE</h4>
+				<div class="experience">
+					<div class="tag">
+					</div>
+					<h5>Automation Tester </h5>
+					<div class="date">
+						<i class="material-icons dp48">today</i>July 2016 OUTSOURCE DEVELOPER
+					</div>
+					<p class="adjust-p">
+						 Working as Freelancer with Javascript language always trying to do clean code and understandable also working in programing some events on hardware devices that we have for test
+						<ul>
+							<li>-HTML</li>
+							<li>-CSS</li>
+							<li>-BOOSTRAP</li>
+							<li>-API</li>
+							<li>-GITHUB</li>
+							<li>-LINUS</li>
+							<li>-JAVASCRIPT</li>
+							<li>-</li>
+							<li>-</li>
+						</ul>
+					</p>
+				</div>
+				<div class="experience">
+					<div class="tag">
+					</div>
+					<h5>WEBSITE DEVELOPER</h5>
+					<div class="date">
+						<i class="material-icons dp48">today</i>January 2016 to July 2018 
+						OUTSOURCE DEVELOPER
+					</div>
+					<p class="adjust-p">
+						 FREELANCER
+					</p>
+				</div>
+				<div class="experience">
+					<div class="tag">
+					</div>
+					<h5>FrontEnd Developer</h5>
+					<div class="date">
+						<i class="material-icons dp48">today</i>June 2018 to September 
+					</div>
+					<p class="adjust-p">
+						 Web design & doing responsive layouts for the Churches in Tel-Aviv using Javascript,Jquery,LESS.js, Google Fonts,Bootstrap and CSS3. Some of my own design layouts Portafolio  <a href="file:///home/emmanuel/Free-Bootstrap-Template/THE%20CHURCH%20PEN%20COP.html">1.church-website-cop</a>
+						 <a href="file:///home/emmanuel/Web-Restaurant/Church-Website/Landingpage.html">2.LANDING PAGE</a><br>
+						 <a href="file:///home/emmanuel/Downloads/Emmanuel%20Asiama%20-%20skeleton%20(1)/index.html">3.EMMANUEL-APP</a>
+
+					</p>
+				</div>
+				<div class="row row2">
+					<div class="col-md-6">
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<img class="size" src="https://image.shutterstock.com/image-vector/original-simple-ghana-flag-isolated-260nw-1255628617.jpg" alt=""/>
+								</div>
+								<div class="back">
+									<div class="back-text">Nationality
+                  Born in Ghana with Ghanaian Nationality also. Diloma in Business Administration</div>
+								</div>
+							</div>
+						</div>
+						<div class="level">
+							<i class="material-icons dp48">star</i><i class="material-icons dp48">star</i><i class="material-icons dp48">star</i><i class="material-icons dp48">star</i><i class="material-icons dp48">star</i>
+							<div class="language">
+								<h6>English</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<img class="size" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXTY_z5ojfMtMJP41KCUGvwQpRc-6zYl1nmtVK-X5K-UQ9_15a" alt=""/>
+								</div>
+								<div class="back">
+							    <div class="back-text">. Completed studies in lsrael as full-stack developer.</div>
+								</div>
+							</div>
+						</div>
+						<div class="level">
+							<i class="material-icons dp48">star</i><i class="material-icons dp48">star</i><i class="material-icons dp48">star</i><i class="material-icons dp48">star</i><i class="material-icons dp48">star</i>
+							<div class="language">
+								<h6>Israel</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 col-sm-3 iconsocial">
+						<a href="https://es-la.facebook.com/public/?query=Juan+karlos+Ramos+Garcia" target="_blank" class="social facebook" title="Facebook"><svg viewbox="0 0 512 512"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/></svg>
+						<!--[if lt IE 9]><em>Facebook</em><![endif]-->
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-3 iconsocial">
+						<a href="https://codepen.io/jramos5/pens/popular/#" class="social codepen" title="Codepen" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" viewbox="0 0 48 48"><g><polygon fill="none" stroke="#455A64" stroke-width="4" stroke-miterlimit="10" points="41,18 24,7 7,18 7,30 24,41 41,30 "></polygon><polyline fill="none" stroke="#455A64" stroke-width="4" stroke-miterlimit="10" points="7,18 24,30 41,18 "></polyline><polyline fill="none" stroke="#455A64" stroke-width="4" stroke-miterlimit="10" points="41,30 24,18.2 7,30 "></polyline><line fill="none" stroke="#455A64" stroke-width="4" stroke-miterlimit="10" x1="24" y1="18.1" x2="24" y2="8"></line><line fill="none" stroke="#455A64" stroke-width="4" stroke-miterlimit="10" x1="24" y1="40" x2="24" y2="29.9"></line></g></svg>
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-3 iconsocial">
+						<a href="https://www.linkedin.com/in/juan-carlos-ramos-garc%C3%ADa-a7702b106" target="_blank" class="social linkedin" title="LinkedIn"><svg viewbox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg>
+						<!--[if lt IE 9]><em>LinkedIn</em><![endif]-->
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-3 iconsocial">
+						<a class="social whatsapp" title="(+52)312-154-00-52">
+						<svg viewbox="0 0 800 800">
+						<path d="M519 454c4 2 7 10-1 31-6 16-33 29-49 29-96 0-189-113-189-167 0-26 9-39 18-48 8-9 14-10 18-10h12c4 0 9 0 13 10l19 44c5 11-9 25-15 31-3 3-6 7-2 13 25 39 41 51 81 71 6 3 10 1 13-2l19-24c5-6 9-4 13-2zM401 200c-110 0-199 90-199 199 0 68 35 113 35 113l-20 74 76-20s42 32 108 32c110 0 199-89 199-199 0-111-89-199-199-199zm0-40c133 0 239 108 239 239 0 132-108 239-239 239-67 0-114-29-114-29l-127 33 34-124s-32-49-32-119c0-131 108-239 239-239z"/>
+						</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var options = [
+   {selector: '.row2', offset: 100, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } },
+];
+
+Materialize.scrollFire(options);
+</script>
+</body>
+</html>
